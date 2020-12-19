@@ -157,6 +157,7 @@ const MovieListWrapper = styled.div`
   .movie-list-paginate-container {
     display: flex;
     justify-content: space-evenly;
+    padding: 5px 0;
   }
 
   .movie-list-reel-logo {

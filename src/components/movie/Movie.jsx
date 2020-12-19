@@ -54,7 +54,9 @@ const MovieWrapper = styled.div`
     flex-basis: 40%;
   }
   @media only screen and ${breakpoint.device.sm} {
-    padding: 5px;
+    flex-basis: 21%;
+  }
+  @media only screen and ${breakpoint.device.md} {
     flex-basis: 21%;
   }
 `;
