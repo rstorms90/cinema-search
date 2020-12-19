@@ -2,6 +2,8 @@
 
 ## Getting started
 
+- Fork this repository
+
 ### `yarn`
 
 - Runs the package manager to install dependencies
