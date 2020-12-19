@@ -1,5 +1,7 @@
 # Cinema Search!
 
+[Home Page](./images/cinemaSearch.png)
+
 ## Getting started
 
 - Fork this repository
