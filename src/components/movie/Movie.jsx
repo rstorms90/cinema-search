@@ -51,7 +51,7 @@ const MovieWrapper = styled.div`
   @media only screen and ${breakpoint.device.xs} {
     justify-content: center;
     padding: 5px;
-    flex-basis: 40%;
+    flex-basis: 100%;
   }
   @media only screen and ${breakpoint.device.sm} {
     flex-basis: 21%;
@@ -86,6 +86,13 @@ const MovieOverview = styled.p`
   color: ${ThemeColors.offWhite};
   text-align: left;
   min-height: 275px;
+
+  @media only screen and ${breakpoint.device.xs} {
+    text-align: center;
+  }
+  @media only screen and ${breakpoint.device.sm} {
+    text-align: left;
+  }
 `;
 
 export default Movie;
