@@ -1,22 +1,26 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const URL = 'https://api.themoviedb.org/3/search/movie?api_key=';
+    const API_KEY = process.env.REACT_APP_API_KEY;
+
+    async function getMovies() {
+      try {
+        const moviesJson = await fetch(`${URL}${API_KEY}`);
+        const results = await moviesJson.json();
+      } catch (e) {
+        throw new Error(e);
+      }
+    }
+    getMovies();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Movie Search!</h1>
       </header>
     </div>
   );
