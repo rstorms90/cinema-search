@@ -1,5 +1,16 @@
-import React from 'react';
+import { ThemeInput } from '../../styles/theme';
 
-export default function SearchBar() {
-  return <div></div>;
-}
+const SearchBar = ({ type, placeholder, onChange }) => {
+  return (
+    <div className="SearchBar">
+      <ThemeInput
+        data-testid="searchbar"
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
+    </div>
+  );
+};
+
+export default SearchBar;
