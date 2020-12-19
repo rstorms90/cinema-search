@@ -1,5 +1,13 @@
-import React from 'react';
+import { ThemeButton } from '../../../styles/theme';
 
-export default function Button() {
-  return <div></div>;
-}
+const Button = ({ onClick, disabled, text }) => {
+  return (
+    <div className="Button" style={{ display: 'inline' }}>
+      <ThemeButton onClick={onClick} disabled={disabled}>
+        {text}
+      </ThemeButton>
+    </div>
+  );
+};
+
+export default Button;
