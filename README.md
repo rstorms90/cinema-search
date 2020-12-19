@@ -1,6 +1,6 @@
 # Cinema Search!
 
-[Home Page](./images/cinemaSearch.png)
+![Home Page](./images/cinemaSearch.png)
 
 ## Getting started
 
