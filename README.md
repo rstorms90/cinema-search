@@ -11,7 +11,7 @@
 - Runs the package manager to install dependencies
 - Create an .env file in the root directory
 - Ensure if adding to git, add .env to your .gitignore before adding your API key
-- Create a variable in the .env file
+- Create a variable in the .env file named REACT_APP_API_KEY
 
   - Ex: REACT_APP_API_KEY="sfku3489sdfoin3a9sof8hel3aelqqk3"
   - The above is an example API key, please go to [https://developers.themoviedb.org/3/getting-started/introduction](https://developers.themoviedb.org/3/getting-started/introduction) to get your API key and replace it with what you see above
